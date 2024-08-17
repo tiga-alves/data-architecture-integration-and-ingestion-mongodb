@@ -34,18 +34,24 @@ db.createCollection("pedidos")
 db.createCollection("produtos")
 ```
 
+7. Insira os documentos nas collections através dos arquivos de insert disponibilizados nesse repositório.  
 
 
-7. Verifique se os dados foram inseridos corretamente: Você pode executar algumas consultas para verificar se os dados foram inseridos corretamente. Por exemplo:
+8. Verifique se os dados foram inseridos corretamente: Você pode executar algumas consultas para verificar se os dados foram inseridos corretamente. Por exemplo:
+```mongo
+db.clientes.find().pretty()
+db.pedidos.find().pretty()
+db.produtos.find().pretty()
 
+```
 
-8. Saia do shell MongoDB: Quando terminar, você pode sair do shell MongoDB digitando exit.
+9. Saia do shell MongoDB: Quando terminar, você pode sair do shell MongoDB digitando exit.
 
-9. Para parar o container (quando não precisar mais dele):
+10. Para parar o container (quando não precisar mais dele):
 ```docker
 docker stop sapataria
 ```
-10. Para remover o container (se não precisar mais dele):
+11. Para remover o container (se não precisar mais dele):
 ```docker
 docker rm sapataria
 ```
